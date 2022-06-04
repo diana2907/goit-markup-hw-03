@@ -41,12 +41,15 @@ img {
   margin: 0 auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /*--------------------HEADER--------------------*/
 
 .header {
   border-bottom: 1px solid #ececec;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .header .container {
@@ -56,13 +59,10 @@ img {
 
 .header-nav {
   display: flex;
+  align-items: center;
 }
 
 .logo-part {
-  font-family: "Raleway";
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 
@@ -75,6 +75,9 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+.logo-dark {
   color: #000000;
 }
 
@@ -93,10 +96,17 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 
 .nav-list-link:hover,
 .nav-list-link:focus {
+  color: var(--accent-color);
+}
+
+.current {
   color: var(--accent-color);
 }
 
@@ -126,10 +136,7 @@ img {
 
 .hero {
   background-color: #2f303a;
-}
-
-.hero .container {
-  padding: 200px 252px;
+  padding: 200px 0;
 }
 
 .hero-title {
@@ -141,6 +148,7 @@ img {
   text-transform: uppercase;
   color: var(--second-text-color);
   max-width: 696px;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
@@ -172,7 +180,7 @@ img {
 /*-----------BENEFITS------------*/
 
 .benefits {
-  padding: 94px 0px;
+  padding-bottom: 0;
 }
 
 .benefits-list {
@@ -203,13 +211,9 @@ img {
 
 /*------------WORK--------------*/
 
-.work {
-  padding-bottom: 94px;
-}
-
 .work-list {
   display: flex;
-  gap: 30px;
+  margin: -15px;
 }
 
 .work-title {
@@ -217,7 +221,8 @@ img {
 }
 
 .work-item {
-  width: calc((100% - 60px) / 3);
+  width: calc((100% - 90px) / 3);
+  margin: 15px;
 }
 
 .title {
@@ -232,8 +237,6 @@ img {
 
 .team {
   background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-title {
@@ -241,14 +244,14 @@ img {
 }
 
 .employee {
-  margin-top: 30px;
+  padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
 }
 
 .team-list {
   display: flex;
-  gap: 30px;
+  margin: -15px;
 }
 
 .team-item {
@@ -256,7 +259,8 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: calc((100%-90px) / 4);
+  width: calc((100%-120px) / 4);
+  margin: 15px;
 }
 
 .team-subtitle {
@@ -276,7 +280,7 @@ img {
 
 /*---------------FOOTER----------------*/
 
-.footer-logo {
+.logo-light {
   color: var(--second-text-color);
 }
 
@@ -315,7 +319,6 @@ img {
 /*-----------------PORTFOLIO------------------*/
 
 .filter-list {
-  padding-top: 100px;
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
@@ -335,6 +338,7 @@ img {
   display: block;
   padding: 6px 22px;
 }
+
 .filter-item:not(:first-child) {
   margin-left: 8px;
 }
@@ -345,18 +349,24 @@ img {
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+}
+
+.current-btn {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .list-projects {
-  padding-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  margin: -15px;
 }
 
 .projects-item {
-  width: calc((100% - 60px) / 3);
+  width: calc((100% - 90px) / 3);
+  margin: 15px;
 }
 
 .project-text {
@@ -366,6 +376,7 @@ img {
   padding-left: 24px;
   padding-bottom: 20px;
   padding-top: 20px;
+  padding-right: 24px;
 }
 
 .projects-title {
